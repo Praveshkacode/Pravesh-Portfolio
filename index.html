@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravesh Portfolio website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgba(136, 135, 95, 0.407);
+            color: rgb(229, 228, 228);
+            font-family: sans-serif;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            background-color: rgb(1, 7, 47);
+            width: 100%;
+
+        }
+
+        nav ul{
+            display: flex;
+        }
+
+        nav  ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav  ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav  ul li a:hover{
+            
+            color: rgb(189, 14, 14);
+            font-size: 1.02rem;
+
+        }
+
+        .left{
+            font-size: 2rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0;
+            align-items: center;
+            color: black;
+
+        }
+        .firstSection >div{
+            width: 30%;
+        }
+
+        .leftSection{
+            font-size: 3rem;  
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+            display: flex;
+        }
+        .leftSection .btn{
+            padding: 10px;
+            background-color: rgb(42, 52, 159);
+            color: white;
+            border: 2px solid rgb(8, 1, 1);
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            /* width: 150px; */
+        }
+
+        .leftSection .btn:hover{
+            color: blanchedalmond;
+        }
+        /* button {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      } */
+    
+        .rightSection img{
+            width:400px;
+            height: 500px;
+            margin-top: -150px;
+            
+        }
+
+        .purple{
+            color: rgb(28, 6, 225);
+        }
+
+        #element{
+            color: rgb(28, 6, 225);
+        }
+        main hr{
+            border: 0;
+            background-color: blue;
+            height: 1.3px;
+            margin: 60px 80px;
+        }
+
+
+        .secondSection{
+            max-width: 80vh;
+            height: 80vh;
+            margin:  120px;
+            color: black;
+        }
+        .secondSection h1{
+            font-size: 2rem;
+            color: blue;
+        }
+        .secondSection .box{
+            background: rgb(14, 10, 10);
+            width:80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical{
+            height: 90px;
+            width: 1px;
+            background-color: rgb(16, 7, 7);
+            margin: 6vw;
+            margin-top: 0;
+
+        }
+
+        .vertical-title{
+            position: relative;
+            top:75px;
+            width: 150px;
+            font-size: 25px;
+            color: rgb(12, 13, 14);
+
+        }
+
+        .vertical-desc{
+            position: relative;
+            top:80px;
+            color: rgb(22, 35, 41);
+            width: 150px;
+            font-size: 15px;
+
+        }
+
+        .image-top{
+            width:23px;
+            position: relative;
+            top:-32px;
+            left:-9px;
+
+        }
+
+        footer{
+            background-color: azure;
+            height: 70px;
+            margin: auto;
+
+        }
+        footer .copyright{
+            text-align: center;
+            color: black;
+            justify-content: center;
+            padding: 15px;
+        }
+        footer a{
+            text-decoration: none;
+        }
+        @media screen and (max-width: 1200px) {
+          body{
+            min-width: 80%;
+          }
+          nav{
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.5rem;
+            width: 100%;
+            
+          }
+          .firstSection{
+            flex-direction: column-reverse;
+          }
+          .leftSection{
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .rightSection{
+            width: 700px !important;
+            display: flex;
+            justify-content: center;
+
+          }
+          .rightSection img{
+            width: 45vw;
+            margin-top: 40px;
+            margin-bottom: 40px;
+          }
+          .box{
+            flex-direction: column;
+          }
+          .secondSection .vertical{
+            height: unset;
+            width: 1vw;}
+          
+         .secondSection{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+          }
+          
+          .vertical-title,.vertical-desc{
+            left:45px;
+          }
+          .secondSection .box{
+            width: 40vw;
+          }
+        
+          .image-top{
+            top: 50px;
+          }
+          footer{
+           display: none;
+          } 
+        }
+
+        
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Pravesh Mishra</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="https://drive.google.com/file/d/1zP3Dw_8HZBvnv05JJ7dlnbvw4brTNrPB/view?usp=drivesdk">About</a></li>
+                    <li><a href="https://www.linkedin.com/in/pravesh-mishra-42802b222/">Services</a></li>
+                    <li><a href="https://github.com/Praveshkacode">Project</a></li>
+                    <li><a href="https://www.linkedin.com/in/pravesh-mishra-42802b222/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="purple">Pravesh Mishra </span>
+                <div>and I am a </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <div class="btn" onclick="window.location.href='https://drive.google.com/file/d/1zP3Dw_8HZBvnv05JJ7dlnbvw4brTNrPB/view?usp=drivesdk';">Download Resume</div>
+                    <div class="btn" onclick="window.location.href='https://github.com/Praveshkacode';">Visit Github </div>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="pbg.png" alt="">
+            
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i done so far</span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="praveshbg.jpeg" alt="">
+                    <div class="vertical-title">
+                        Maha Kumbh 2025 Personalized Website
+                    </div>
+                    <div class="vertical-desc">
+                         <a href="https://mahakumbh.live">Mahakumbh.live</a> Developed a dynamic website using React.js, Node.js, Express, MongoDB, and Cloudinary to provide users with a personalized experience.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="praveshbg.jpeg" alt="">
+                    <div class="vertical-title">
+                        Food Order Management (Bhojan-Bazaar)
+                    </div>
+                    <div class="vertical-desc">
+                        <a href="https://bhojanbazzar.onrender.com/">Bhojanbazzar.com</a> Developed a full-stack web application using React.js, Node.js, Express, and MongoDB.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="praveshbg.jpeg" alt="">
+                    <div class="vertical-title">
+                        Real-Time Chat App
+                    </div>
+                    <div class="vertical-desc">
+                        <a href="https://golden-chat.netlify.app/">Golden Whatsapp</a>
+                        Developed an interactive chat website using React for the frontend, Node.js for the backend, and
+                        Socket.IO for real-time communication.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="praveshbg.jpeg" alt="">
+                    <div class="vertical-title">
+                        News Website
+                    </div>
+                    <div class="vertical-desc">
+                        <a href="https://github.com/Praveshkacode/News-website-projects">Github Repo Link </a>
+                        Developed a news website using HTML, CSS, and JavaScript to display news articles.
+                        Used the News API to fetch and show articles based on user interests.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="praveshbg.jpeg" alt="">
+                    <div class="vertical-title">
+                        Real-Time Voting App
+                    </div>
+                    <div class="vertical-desc">
+                        <a href="https://github.com/Praveshkacode/Voting-App-Nodejs">Githb Repo Link </a>
+                        Developed a secure real-time voting application using Node.js, Express, and MongoDB.
+                        Featured candidate and voter management with an admin interface to prevent duplicate voting and display real-time results.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="praveshbg.jpeg" alt="">
+                    <div class="vertical-title">
+                        Python Projects
+                    </div>
+                    <div class="vertical-desc">
+                        I create Various Python Projects Like Library Management, Jarvis Ai ,Whatsapp tools , Youtube video Downloader and many more.
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="copyright">
+           <h2> Copyrigt &#169; https://praveshmishra.netlify.app || ALL right reserved By <a href="https://www.linkedin.com/in/pravesh-mishra-42802b222/">Pravesh Mishra </a></h2>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Software Enginner','Web Designer','Coder'],
+      typeSpeed: 50,
+      });
+    </script>
+    
+</body>
+</html>
